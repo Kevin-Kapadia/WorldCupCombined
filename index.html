@@ -2396,17 +2396,19 @@ border: 0;
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#set-up" id="toc-set-up" class="nav-link active" data-scroll-target="#set-up">Set up</a>
+  <li><a href="#world-cup-data" id="toc-world-cup-data" class="nav-link active" data-scroll-target="#world-cup-data">World Cup Data</a>
   <ul>
+  <li><a href="#set-up" id="toc-set-up" class="nav-link" data-scroll-target="#set-up">Set up</a>
+  <ul class="collapse">
   <li><a href="#utility-functions" id="toc-utility-functions" class="nav-link" data-scroll-target="#utility-functions">Utility Functions</a></li>
   <li><a href="#shared-analysis-helpers" id="toc-shared-analysis-helpers" class="nav-link" data-scroll-target="#shared-analysis-helpers">Shared Analysis Helpers</a></li>
   </ul></li>
   <li><a href="#data-cleaning" id="toc-data-cleaning" class="nav-link" data-scroll-target="#data-cleaning">Data Cleaning</a>
-  <ul>
+  <ul class="collapse">
   <li><a href="#validation-checks" id="toc-validation-checks" class="nav-link" data-scroll-target="#validation-checks">Validation Checks</a></li>
   </ul></li>
   <li><a href="#summary-statistics" id="toc-summary-statistics" class="nav-link" data-scroll-target="#summary-statistics">Summary Statistics</a>
-  <ul>
+  <ul class="collapse">
   <li><a href="#sample-and-demographics" id="toc-sample-and-demographics" class="nav-link" data-scroll-target="#sample-and-demographics">Sample and Demographics</a></li>
   <li><a href="#experience-groups" id="toc-experience-groups" class="nav-link" data-scroll-target="#experience-groups">Experience Groups</a></li>
   <li><a href="#participant-level-betting-behavior" id="toc-participant-level-betting-behavior" class="nav-link" data-scroll-target="#participant-level-betting-behavior">Participant-Level Betting Behavior</a></li>
@@ -2414,35 +2416,36 @@ border: 0;
   <li><a href="#prediction-and-betting-accuracy" id="toc-prediction-and-betting-accuracy" class="nav-link" data-scroll-target="#prediction-and-betting-accuracy">Prediction and Betting Accuracy</a></li>
   </ul></li>
   <li><a href="#brier-scores" id="toc-brier-scores" class="nav-link" data-scroll-target="#brier-scores">Brier Scores</a>
-  <ul>
+  <ul class="collapse">
   <li><a href="#summary-table" id="toc-summary-table" class="nav-link" data-scroll-target="#summary-table">Summary Table</a></li>
   <li><a href="#graphs" id="toc-graphs" class="nav-link" data-scroll-target="#graphs">Graphs</a></li>
   <li><a href="#regressions" id="toc-regressions" class="nav-link" data-scroll-target="#regressions">Regressions</a></li>
   </ul></li>
   <li><a href="#consistency-of-bets" id="toc-consistency-of-bets" class="nav-link" data-scroll-target="#consistency-of-bets">Consistency of Bets</a>
-  <ul>
+  <ul class="collapse">
   <li><a href="#summary-table-1" id="toc-summary-table-1" class="nav-link" data-scroll-target="#summary-table-1">Summary Table</a></li>
   <li><a href="#graphs-1" id="toc-graphs-1" class="nav-link" data-scroll-target="#graphs-1">Graphs</a></li>
   <li><a href="#regressions-1" id="toc-regressions-1" class="nav-link" data-scroll-target="#regressions-1">Regressions</a></li>
   </ul></li>
   <li><a href="#distribution-of-bet-amount" id="toc-distribution-of-bet-amount" class="nav-link" data-scroll-target="#distribution-of-bet-amount">Distribution of Bet Amount</a>
-  <ul>
+  <ul class="collapse">
   <li><a href="#summary-table-2" id="toc-summary-table-2" class="nav-link" data-scroll-target="#summary-table-2">Summary Table</a></li>
   <li><a href="#graphs-2" id="toc-graphs-2" class="nav-link" data-scroll-target="#graphs-2">Graphs</a></li>
   <li><a href="#regressions-2" id="toc-regressions-2" class="nav-link" data-scroll-target="#regressions-2">Regressions</a></li>
   </ul></li>
   <li><a href="#participant-vs.-sportsbook-probabilities" id="toc-participant-vs.-sportsbook-probabilities" class="nav-link" data-scroll-target="#participant-vs.-sportsbook-probabilities">Participant vs. Sportsbook Probabilities</a>
-  <ul>
+  <ul class="collapse">
   <li><a href="#summary-table-3" id="toc-summary-table-3" class="nav-link" data-scroll-target="#summary-table-3">Summary Table</a></li>
   <li><a href="#graphs-3" id="toc-graphs-3" class="nav-link" data-scroll-target="#graphs-3">Graphs</a></li>
   <li><a href="#regressions-3" id="toc-regressions-3" class="nav-link" data-scroll-target="#regressions-3">Regressions</a></li>
   </ul></li>
   <li><a href="#betting-on-the-team-believed-to-win" id="toc-betting-on-the-team-believed-to-win" class="nav-link" data-scroll-target="#betting-on-the-team-believed-to-win">Betting on the Team Believed to Win</a>
-  <ul>
+  <ul class="collapse">
   <li><a href="#summary-table-4" id="toc-summary-table-4" class="nav-link" data-scroll-target="#summary-table-4">Summary Table</a></li>
   <li><a href="#belief-vs.-market-2x2" id="toc-belief-vs.-market-2x2" class="nav-link" data-scroll-target="#belief-vs.-market-2x2">Belief vs. Market: 2x2</a></li>
   <li><a href="#graphs-4" id="toc-graphs-4" class="nav-link" data-scroll-target="#graphs-4">Graphs</a></li>
   <li><a href="#regressions-4" id="toc-regressions-4" class="nav-link" data-scroll-target="#regressions-4">Regressions</a></li>
+  </ul></li>
   </ul></li>
   <li><a href="#additional-analyses" id="toc-additional-analyses" class="nav-link" data-scroll-target="#additional-analyses">Additional Analyses</a>
   <ul>
@@ -2450,7 +2453,12 @@ border: 0;
   <li><a href="#allocation-patterns" id="toc-allocation-patterns" class="nav-link" data-scroll-target="#allocation-patterns">Allocation Patterns</a></li>
   <li><a href="#expected-value-of-bets" id="toc-expected-value-of-bets" class="nav-link" data-scroll-target="#expected-value-of-bets">Expected Value of Bets</a></li>
   <li><a href="#team-affinity-and-betting" id="toc-team-affinity-and-betting" class="nav-link" data-scroll-target="#team-affinity-and-betting">Team Affinity and Betting</a></li>
-  <li><a href="#relative-influence-of-beliefs-ev-and-desirability" id="toc-relative-influence-of-beliefs-ev-and-desirability" class="nav-link" data-scroll-target="#relative-influence-of-beliefs-ev-and-desirability">Relative Influence of Beliefs, EV, and Desirability</a></li>
+  <li><a href="#relative-influence-of-beliefs-ev-and-desirability" id="toc-relative-influence-of-beliefs-ev-and-desirability" class="nav-link" data-scroll-target="#relative-influence-of-beliefs-ev-and-desirability">Relative Influence of Beliefs, EV, and Desirability</a>
+  <ul class="collapse">
+  <li><a href="#full-model-do-not-use" id="toc-full-model-do-not-use" class="nav-link" data-scroll-target="#full-model-do-not-use">Full Model (do not use)</a></li>
+  <li><a href="#pfav-omitted" id="toc-pfav-omitted" class="nav-link" data-scroll-target="#pfav-omitted">p(fav) Omitted</a></li>
+  <li><a href="#both-ev-terms-omitted" id="toc-both-ev-terms-omitted" class="nav-link" data-scroll-target="#both-ev-terms-omitted">Both EV Terms Omitted</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 </nav>
@@ -2477,6 +2485,8 @@ border: 0;
 </header>
 
 
+<section id="world-cup-data" class="level1">
+<h1>World Cup Data</h1>
 <section id="set-up" class="level2 hidden">
 <h2 class="hidden anchored" data-anchor-id="set-up">Set up</h2>
 <section id="utility-functions" class="level3 hidden">
@@ -4436,6 +4446,7 @@ Study 2
 <hr>
 </section>
 </section>
+</section>
 <section id="additional-analyses" class="level1">
 <h1>Additional Analyses</h1>
 <p>Sections below were not part of the required set. They are grouped here for easy review.</p>
@@ -4980,11 +4991,11 @@ Study 2
 </section>
 <section id="relative-influence-of-beliefs-ev-and-desirability" class="level2">
 <h2 class="anchored" data-anchor-id="relative-influence-of-beliefs-ev-and-desirability">Relative Influence of Beliefs, EV, and Desirability</h2>
-<p>A single model comparing how much each input drives the choice to bet on the sportsbook favorite.</p>
+<section id="full-model-do-not-use" class="level3">
+<h3 class="anchored" data-anchor-id="full-model-do-not-use">Full Model (do not use)</h3>
 <div class="cell">
 <div class="cell-output-display">
 <table style="border-collapse:collapse; border:none;">
-<caption style="font-weight: bold; text-align:left;">Predicting Betting on the Sportsbook Favorite (standardized predictors)</caption>
 <tbody><tr>
 <th style="border-top: double; text-align:center; font-style:normal; font-weight:bold; padding:0.2cm;  text-align:left; "> </th>
 <th colspan="3" style="border-top: double; text-align:center; font-style:normal; font-weight:bold; padding:0.2cm; ">Study 1 (Round of 16)</th>
@@ -5001,20 +5012,20 @@ Study 2
 </tr>
 <tr>
 <td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">(Intercept)</td>
-<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">2.86</td>
-<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">2.41 – 3.39</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">0.00</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">0.00 – 0.00</td>
 <td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  "><strong>&lt;0.001</strong></td>
-<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">4.17</td>
-<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">3.17 – 5.49</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">0.00</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">0.00 – 0.00</td>
 <td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col7"><strong>&lt;0.001</strong></td>
 </tr>
 <tr>
 <td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">p fav</td>
-<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">14.25</td>
-<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">10.82 – 18.78</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">1.12</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">1.11 – 1.14</td>
 <td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  "><strong>&lt;0.001</strong></td>
-<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">38.39</td>
-<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">12.87 – 114.55</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">1.19</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">1.13 – 1.25</td>
 <td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col7"><strong>&lt;0.001</strong></td>
 </tr>
 <tr>
@@ -5091,6 +5102,203 @@ Study 2
 </tbody></table>
 </div>
 </div>
+</section>
+<section id="pfav-omitted" class="level3">
+<h3 class="anchored" data-anchor-id="pfav-omitted">p(fav) Omitted</h3>
+<div class="cell">
+<div class="cell-output-display">
+<table style="border-collapse:collapse; border:none;">
+<tbody><tr>
+<th style="border-top: double; text-align:center; font-style:normal; font-weight:bold; padding:0.2cm;  text-align:left; "> </th>
+<th colspan="3" style="border-top: double; text-align:center; font-style:normal; font-weight:bold; padding:0.2cm; ">Study 1 (Round of 16)</th>
+<th colspan="3" style="border-top: double; text-align:center; font-style:normal; font-weight:bold; padding:0.2cm; ">Study 2 (Quarterfinals)</th>
+</tr>
+<tr>
+<td style=" text-align:center; border-bottom:1px solid; font-style:italic; font-weight:normal;  text-align:left; ">Predictors</td>
+<td style=" text-align:center; border-bottom:1px solid; font-style:italic; font-weight:normal;  ">Odds Ratios</td>
+<td style=" text-align:center; border-bottom:1px solid; font-style:italic; font-weight:normal;  ">CI</td>
+<td style=" text-align:center; border-bottom:1px solid; font-style:italic; font-weight:normal;  ">p</td>
+<td style=" text-align:center; border-bottom:1px solid; font-style:italic; font-weight:normal;  ">Odds Ratios</td>
+<td style=" text-align:center; border-bottom:1px solid; font-style:italic; font-weight:normal;  ">CI</td>
+<td style=" text-align:center; border-bottom:1px solid; font-style:italic; font-weight:normal;  col7">p</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">(Intercept)</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">2.25</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">1.97 – 2.57</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  "><strong>&lt;0.001</strong></td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">3.79</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">2.94 – 4.89</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col7"><strong>&lt;0.001</strong></td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">ev fav</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">6.69</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">5.61 – 7.97</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  "><strong>&lt;0.001</strong></td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">23.08</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">10.22 – 52.14</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col7"><strong>&lt;0.001</strong></td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">ev dog</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">1.90</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">1.68 – 2.15</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  "><strong>&lt;0.001</strong></td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">2.95</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">1.38 – 6.31</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col7"><strong>0.005</strong></td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">desirability fav</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">1.01</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">0.92 – 1.12</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">0.791</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">1.04</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">0.88 – 1.23</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col7">0.634</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">desirability dog</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">1.08</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">0.98 – 1.19</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">0.110</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">1.06</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">0.90 – 1.25</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col7">0.500</td>
+</tr>
+<tr>
+<td colspan="7" style="font-weight:bold; text-align:left; padding-top:.8em;">Random Effects</td>
+</tr>
+
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; padding-top:0.1cm; padding-bottom:0.1cm;">σ<sup>2</sup></td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left;" colspan="3">3.29</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left;" colspan="3">3.29</td>
+</tr>
+
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; padding-top:0.1cm; padding-bottom:0.1cm;">τ<sub>00</sub></td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left;" colspan="3">1.34 <sub>ProlificID</sub></td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left;" colspan="3">3.79 <sub>ProlificID</sub></td>
+
+</tr><tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; padding-top:0.1cm; padding-bottom:0.1cm;">ICC</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left;" colspan="3">0.29</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left;" colspan="3">0.54</td>
+
+</tr><tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; padding-top:0.1cm; padding-bottom:0.1cm;">N</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left;" colspan="3">500 <sub>ProlificID</sub></td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left;" colspan="3">500 <sub>ProlificID</sub></td>
+</tr><tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; padding-top:0.1cm; padding-bottom:0.1cm; border-top:1px solid;">Observations</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left; border-top:1px solid;" colspan="3">4000</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left; border-top:1px solid;" colspan="3">2000</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; padding-top:0.1cm; padding-bottom:0.1cm;">Marginal R<sup>2</sup> / Conditional R<sup>2</sup></td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left;" colspan="3">0.330 / 0.524</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left;" colspan="3">0.383 / 0.713</td>
+</tr>
+
+</tbody></table>
+</div>
+</div>
+</section>
+<section id="both-ev-terms-omitted" class="level3">
+<h3 class="anchored" data-anchor-id="both-ev-terms-omitted">Both EV Terms Omitted</h3>
+<div class="cell">
+<div class="cell-output-display">
+<table style="border-collapse:collapse; border:none;">
+<tbody><tr>
+<th style="border-top: double; text-align:center; font-style:normal; font-weight:bold; padding:0.2cm;  text-align:left; "> </th>
+<th colspan="3" style="border-top: double; text-align:center; font-style:normal; font-weight:bold; padding:0.2cm; ">Study 1 (Round of 16)</th>
+<th colspan="3" style="border-top: double; text-align:center; font-style:normal; font-weight:bold; padding:0.2cm; ">Study 2 (Quarterfinals)</th>
+</tr>
+<tr>
+<td style=" text-align:center; border-bottom:1px solid; font-style:italic; font-weight:normal;  text-align:left; ">Predictors</td>
+<td style=" text-align:center; border-bottom:1px solid; font-style:italic; font-weight:normal;  ">Odds Ratios</td>
+<td style=" text-align:center; border-bottom:1px solid; font-style:italic; font-weight:normal;  ">CI</td>
+<td style=" text-align:center; border-bottom:1px solid; font-style:italic; font-weight:normal;  ">p</td>
+<td style=" text-align:center; border-bottom:1px solid; font-style:italic; font-weight:normal;  ">Odds Ratios</td>
+<td style=" text-align:center; border-bottom:1px solid; font-style:italic; font-weight:normal;  ">CI</td>
+<td style=" text-align:center; border-bottom:1px solid; font-style:italic; font-weight:normal;  col7">p</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">(Intercept)</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">0.01</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">0.01 – 0.02</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  "><strong>&lt;0.001</strong></td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">0.01</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">0.00 – 0.01</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col7"><strong>&lt;0.001</strong></td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">p fav</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">1.10</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">1.09 – 1.10</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  "><strong>&lt;0.001</strong></td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">1.11</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">1.10 – 1.12</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col7"><strong>&lt;0.001</strong></td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">desirability fav</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">1.02</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">0.92 – 1.14</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">0.664</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">1.05</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">0.89 – 1.25</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col7">0.556</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; ">desirability dog</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">1.08</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">0.97 – 1.20</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">0.178</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">1.05</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  ">0.88 – 1.24</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:center;  col7">0.601</td>
+</tr>
+<tr>
+<td colspan="7" style="font-weight:bold; text-align:left; padding-top:.8em;">Random Effects</td>
+</tr>
+
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; padding-top:0.1cm; padding-bottom:0.1cm;">σ<sup>2</sup></td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left;" colspan="3">3.29</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left;" colspan="3">3.29</td>
+</tr>
+
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; padding-top:0.1cm; padding-bottom:0.1cm;">τ<sub>00</sub></td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left;" colspan="3">2.10 <sub>ProlificID</sub></td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left;" colspan="3">4.21 <sub>ProlificID</sub></td>
+
+</tr><tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; padding-top:0.1cm; padding-bottom:0.1cm;">ICC</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left;" colspan="3">0.39</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left;" colspan="3">0.56</td>
+
+</tr><tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; padding-top:0.1cm; padding-bottom:0.1cm;">N</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left;" colspan="3">500 <sub>ProlificID</sub></td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left;" colspan="3">500 <sub>ProlificID</sub></td>
+</tr><tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; padding-top:0.1cm; padding-bottom:0.1cm; border-top:1px solid;">Observations</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left; border-top:1px solid;" colspan="3">4000</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left; border-top:1px solid;" colspan="3">2000</td>
+</tr>
+<tr>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; padding-top:0.1cm; padding-bottom:0.1cm;">Marginal R<sup>2</sup> / Conditional R<sup>2</sup></td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left;" colspan="3">0.449 / 0.663</td>
+<td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left;" colspan="3">0.397 / 0.735</td>
+</tr>
+
+</tbody></table>
+</div>
+</div>
 <div class="cell">
 <div class="cell-output-display">
 <div class="table-responsive">
@@ -5105,16 +5313,21 @@ Study 2
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">Correlation between EV(favorite) and EV(underdog)</td>
+<td style="text-align: left;">Correlation: EV(favorite) and EV(underdog)</td>
 <td style="text-align: right;">-0.72</td>
 <td style="text-align: right;">-0.98</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Correlation: p(favorite) and EV(favorite)</td>
+<td style="text-align: right;">0.86</td>
+<td style="text-align: right;">0.99</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
 </div>
-<p><code>ev_fav</code> and <code>ev_dog</code> are strongly negatively correlated because both derive from the same underlying probability (<code>p_dog = 1 - p_fav</code>). Individual coefficients for these two terms should therefore be read with caution: each is a partial effect holding the other constant, which is not the same as the marginal relationship and can point in a counterintuitive direction. Their joint contribution is more trustworthy than either coefficient alone.</p>
+</section>
 </section>
 </section>
 
